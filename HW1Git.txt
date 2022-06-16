@@ -4,6 +4,7 @@
  3. На против каждого действия - напишите команду в GitBash
 Файл со сценарием и ссылку на свой гит хаб отправляйте менторам на проверку.
 
+------------------------------------------------------------
 
 JSON
  4. Создать внешний репозиторий c названием JSON.
@@ -36,7 +37,6 @@ git push
 }
 ------------
  11. Отправить изменения на внешний репозиторий.
-git add new.json
 git commit -m "add modified new.json"
 git push
 ------------
@@ -48,7 +48,7 @@ vim preferences.json
 {
         "FavoriteFilm": "Forest Gump",
         "FavoriteSerial": "Everybody Hates Chris",
-        "FavoriteFood": "Fried potatos with onion and meat",
+        "FavoriteFood": "Fried potatoes with onion and meat",
         "FavoriteTimeOfYear": "Summer",
         "CountryToGo": "Australia"
 }
@@ -61,7 +61,7 @@ vim skils.json
                 "Client-Sever architecture",
                 "HTTP methods of request to server",
                 "HTTP server response codes",
-                "Stractures of HTTP requests and responces",
+                "Structures of HTTP requests and responses",
                 "What is JSON, XML. What's the structure of them",
                 "Testing API by Postman",
                 "Get and read logs from outside servers",
@@ -97,8 +97,7 @@ cat bug_report.json
 
 }
 
-
-
+------------------------------------------------------------
 
 XML
  21. Создать внешний репозиторий c названием XML.
@@ -140,7 +139,6 @@ vim new.xml
 </aboutme>
 ------------
  28. Отправить изменения на внешний репозиторий.
-git add new.xml
 git commit -m"add modified new.xml" new.xml
 git push
 ------------
@@ -163,7 +161,7 @@ vim preferences.xml
 <my_pref>
         <film>Forest Gump</film>
         <tv_serial>Everybidy Hates Chris</tv_serial>
-        <food>Fried potatos with onion and meat</food>
+        <food>Fried potatoes with onion and meat</food>
         <season_year>Summer</season_year>
         <country_togo>Australia</country_togo>
 </mypref>
@@ -182,7 +180,7 @@ vim sklls.xml
 <skill id="1">Client-Sever architecture</skill>
 <skill id="2">HTTP methods of request to server</skill>
 <skill id="3">HTTP server response codes</skill>
-<skill id="4">Stractures of HTTP requests and responces</skill>
+<skill id="4">Structures of HTTP requests and responses</skill>
 <skill id="5">What is JSON, XML. What's the structure of them</skill>
 <skill id="6">Testing API by Postman</skill>
 <skill id="8">Get and read logs from outside servers</skill>
@@ -223,4 +221,78 @@ cat bug_report.xml
   <screenshot>(͡° ͜ʖ ͡°) (͡°╭͜ʖ╮͡°) (✷‿✷))¯\_(ツ)_/¯ (V)(;,;)(V) (>^.^)>(^*o*)^</screenshot>
 </bug>
 
+------------------------------------------------------------
+
+TXT
+1. Создать внешний репозиторий c названием TXT.
+ 2. Клонировать репозиторий TXT на локальный компьютер.
+ 3. Внутри локального TXT создать файл “new.txt”.
+cat > new.txt
+------
+ 4. Добавить файл под гит.
+git add new.txt
+------
+ 5. Закоммитить файл.
+git commit -m"add new.txt" new.txt
+------
+ 6. Отправить файл на внешний GitHub репозиторий.
+git push
+------
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+vim new.txt
+1. ФИО
+Сучков Дмитрий Александрович
+2. Возраст
+34
+3. Количество домашних животных
+0
+4. Будущая желаемая зарплата
+4000$
+------
+ 8. Отправить изменения на внешний репозиторий.
+git commit -m"fill new.txt" new.txt && git push
+------
+ 9. Создать файл preferences.txt
+cat > preferences.txt
+------
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+vim preferences.txt
+1. Favorite film
+ - Forest Gump
+2. Favorite TV Serial
+ - Everybody Hates Chris
+3. Favorite food
+ - Fried potatoes with onion and meat
+4. Favorite time of year
+ - Summer
+5. Country wish to visit
+ - Australia
+------
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+vim sklls.txt
+Skills lesson on course:
+1. Client-Server architecture
+2. HTTP methods
+3. HTTP sever response codes
+4. Structures of HTTP requests and responses
+5. What is JSON, XML. What's the structure of them
+6. Testing API by Postman
+7. Get and read logs from outside servers
+8. Sniffing http web traffic by Charles and Fidders
+9. Dev Tools of web browsers (Chrome, Firefox, Opera)
+10. VPN
+11. Mobile Testing
+------
+ 12. Сделать коммит в одну строку.
+git commit -am"add sklls and preferences"
+------
+ 13. Отправить сразу 2 файла на внешний репозиторий.
+git push sklls.txt preferences.txt
+------
+ 14. На веб интерфейсе создать файл bug_report.txt.
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 18. Синхронизировать внешний и локальный репозиторий TXT
+git pull
 
