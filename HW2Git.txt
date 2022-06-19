@@ -36,6 +36,7 @@ git checkout main
 git merge Bag-Report
 ------
 6. Запушить main на внешний репозиторий.
+git checkout main
 git 
 ------
 7. В ветке CheckLists набросать структуру чек листа.
