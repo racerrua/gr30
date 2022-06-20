@@ -46,12 +46,32 @@ git merge Bag-Report
 git push origin main
 ------
 7. В ветке CheckLists набросать структуру чек листа.
+vim checklist.txt
+Requared fields:                Chrome          Opera
+------------------------------------------------------------
+First name
+Last name
+Pass
+Repeat pass
 
+Allowed characters:
+------------------------------------------------------------
+Cyrillic
+Latin
+Special characters
+Only space
+Space between characters
+Existing login
+Only digits
+
+Border values
+Not valid pass
 ------
 8. Запушить структуру на внешний репозиторий
-
+git push
 ------
 9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
 
 ------
 10. Синхронизировать Внешнюю и Локальную ветки Main
+git pull
