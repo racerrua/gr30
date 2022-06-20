@@ -1,0 +1,19 @@
+Requared fields:		Chrome		Opera
+------------------------------------------------------------
+First name
+Last name
+Pass
+Repeat pass
+
+Allowed characters:
+------------------------------------------------------------
+Cyrillic
+Latin
+Special characters
+Only space
+Space between characters
+Existing login
+Only digits
+
+Border values
+Not valid pass
