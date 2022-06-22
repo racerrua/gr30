@@ -67,13 +67,13 @@
 // 4***:
 function checkAge(age) {
 	while (!isFinite(age) || !age)
-	if (!isFinite(age)) {
-		alert("Введите число!",)
-		age = prompt("Введите свой возраст:",)
-	} else {
-		alert("Не осталяйте поле пустым!",)
-		age = prompt("Введите свой возраст:",)
-	}
+		if (!isFinite(age)) {
+			alert("Введите число!",)
+			age = prompt("Введите свой возраст:",)
+		} else {
+			alert("Не осталяйте поле пустым!",)
+			age = prompt("Введите свой возраст:",)
+		}
 age = Number(age)	
 if (typeof(age) == "number") {
 let age_2 = 18
